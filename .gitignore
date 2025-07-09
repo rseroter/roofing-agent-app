@@ -1,0 +1,7 @@
+# VS Code
+.vscode/
+
+# JSON files
+*.json
+
+notes.txt

@@ -1,0 +1,10 @@
+# Go binaries
+appointment-service
+
+# Sensitive notes
+notes.txt
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
