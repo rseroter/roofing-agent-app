@@ -1,0 +1,19 @@
+sources:
+  postgresql:
+    kind: cloud-sql-postgres
+    project: seroter-project-base
+    region: us-central1
+    instance: seroter-db
+    database: postgres
+    user: postgres
+    password: [password]
+tools:
+  search-offers-by-city:
+    kind: postgres-sql
+    source: postgresql
+    description: Search for roofing offers based on the customer's city
+    parameters:
+      - name: city
+        type: string
+        description: The city for which to search roofing offers
+    statement: SELECT * FROM offers WHERE city = $1 AND CURRENT_DATE <= offer_end_date;
