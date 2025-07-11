@@ -5,3 +5,5 @@
 *.json
 
 notes.txt
+
+.DS_Store
