@@ -30,7 +30,7 @@ weather_agent = Agent(
 
 root_agent = Agent(
     name="root_agent",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     description="This is the starting agent for Seroter Roofing and customers who want to book a roofing appointment",
     instruction=(
         """
